@@ -1,0 +1,62 @@
+
+
+html {
+    background-image: url("Imagenes\fondoindex.jpg");
+    
+
+    
+  }
+
+body {
+    background-image: url("Imagenes\fondoindex.jpg");
+    
+
+    
+  }
+
+*{
+
+    font-family: 'Krona One', sans-serif;
+    
+}
+form
+{
+
+
+    text-align: center;
+}
+
+input[type=password], input[type=text] {
+    width : 250px;
+    height: 40px;
+    
+  
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+       -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+            box-sizing: border-box;
+  }
+
+
+  input[type=submit]{
+
+    width : 250px;
+    height: 40px;
+
+  }
+ form  a input[type=button]{ /* Para ciertas cosas dentro de otras cosas*/
+
+    width : 250px;
+    height: 40px;
+
+  }
+
+  .btn_intentar{
+
+    width : 250px;
+    height: 40px;
+
+  }
+  h1{
+    color: red;
+
+  }

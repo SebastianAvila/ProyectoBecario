@@ -1,0 +1,73 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `db_becario`
+-- Estructura de tabla para la tabla `becario`
+--
+
+CREATE TABLE `becario` (
+  `nombre` varchar(50) NOT NULL,
+  `carrera` varchar(50) NOT NULL,
+  `plantel` varchar(50) NOT NULL,
+  `celular` varchar(50) NOT NULL,
+  `tipo_programa` varchar(50) NOT NULL,
+  `horas` varchar(50) NOT NULL,
+  `fecha_ini` varchar(50) NOT NULL,
+  `fecha_fin` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Estructura de tabla para la tabla `becariocuenta`
+--
+CREATE TABLE `becariocuenta` (
+  `user_becario` varchar(50) NOT NULL,
+  `pass_becario` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `_becario`
+--
+
+INSERT INTO `admin` (`user_becario`, `pass_becario`) VALUES
+('alexis', 'alexarmandomdx@gmail.com'),
+('sebastian', 'jesusaviala@gmail.com');
+COMMIT;
+
+--
+-- Estructura de tabla para la tabla `plantel`
+--
+CREATE TABLE `plantel` (
+  `pnombre` varchar(50) NOT NULL,
+  `h_servisocial` varchar(50) NOT NULL,
+  `h_practica` varchar(50) NOT NULL,
+  `h_residencia` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Estructura de tabla para la tabla `admin`
+--
+CREATE TABLE `admin` (
+  `user` varchar(50) NOT NULL,
+  `pass` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `admin`
+--
+
+INSERT INTO `admin` (`user`, `pass`) VALUES
+('alexsebas', '1234');
+COMMIT;
+
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
