@@ -26,6 +26,7 @@
                      <a href="registroAlumnos.php."> <li>Alumnos</li></a> 
                      <a href="registroPlanteles.php"> <li>Planteles</li> </a> 
                      <a href="relacionAlumnoServi.php"><li>Tipo de alumnos</li></a>
+                     <a href="registroPrograma.php"> <li>Registrar tipo de Programa </li> </a>
                    
                 </ul>
             </nav>

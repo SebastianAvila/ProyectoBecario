@@ -21,6 +21,20 @@
                      <a href="registroAlumnos.php."> <li>Alumnos</li></a> 
                      <a href="registroPlanteles.php"> <li>Planteles</li> </a> 
                      <a href="relacionAlumnoServi.php"><li>Tipo de alumnos</li></a>
+                     <a href="registroPrograma.php"> <li>Registrar tipo de Programa </li> </a>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                     <a href="../index.html"> <li>Cerrar Sesion</li> </a>
                    
                 </ul>
             </nav>
@@ -46,6 +60,9 @@
 
 <h4>Fecha fin del servicio</h4>
 <input type="date" name="tiempoFinBeca" id="tiempoFinBeca" placeholder="Fin Servicio">
+
+<h4>Celular</h4>
+<input type="number" name="celular" id="celular" placeholder="Lada + Numero">
 
 <h4>Escuela de procedencia</h4>
 <fieldset>

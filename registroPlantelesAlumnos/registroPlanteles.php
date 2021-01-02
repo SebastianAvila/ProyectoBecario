@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="barraLateral.css">
      <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet"/>
+    <title>Registro Alumnos</title>
 </head>
 <body>
 <div class="content-all">
@@ -21,23 +18,47 @@
                      <a href="registroAlumnos.php."> <li>Alumnos</li></a> 
                      <a href="registroPlanteles.php"> <li>Planteles</li> </a> 
                      <a href="relacionAlumnoServi.php"><li>Tipo de alumnos</li></a>
+                     <a href="registroPrograma.php"> <li>Registrar tipo de Programa </li> </a>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                     <a href="../index.html"> <li>Cerrar Sesion</li> </a>
                    
                 </ul>
             </nav>
 </div>
+<form  action="" method="POST">
+  <div class="formPlanteles">
+    <h3>Planteles</h3>
+    <h4>Nombre</h4>
+    <input type="text" name="nombrePlantel" id="nombrePlantel">
+    <h4>Clave</h4>
+    <input type="text" name="clavePlantel" id="clavePlantel">
+    <h4>Localidad</h4>
+    <input type="text" name="localidadPlantel" id="localidadPlantel">
 
-<div class="formPlanteles">
-<h3>Planteles</h3>
-<h4>Nombre</h4>
-<input type="text" name="nombrePlantel" id="nombrePlantel">
-<h4>Clave</h4>
-<input type="text" name="clavePlantel" id="clavePlantel">
-<h4>Localidad</h4>
-<input type="text" name="localidaPlantel" id="localidadPlantel">
-
-<input type="submit" value="Registrar" name="registraPlantel">
+    <input type="submit" value="registrar" name="registraPlantel">
 
 
-</div>
+  </div>
+
+</form>
+
+
+
 </body>
 </html>
+
+
+<?php
+include("registrDatosPlanteles.php");
+?>
