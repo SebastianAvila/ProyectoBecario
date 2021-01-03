@@ -14,12 +14,18 @@ if (isset($_POST['enviaPrograma'])) {
         date_default_timezone_set("America/Mexico_City");
         DateTimeInterface::RFC1123;
         $fechaRegistroPrograma = date(DATE_RFC1123);
-        $id_UnicoPro = "2e232323";
+
+        $NumAleFo = rand(9999, 99999);
+        $id_UnicoPro = "PRO";
+        $id_UnicoPro .= $NumAleFo;
+        
         $tipoProgra = $_POST['tipoProgra'];
         $fechaInicioBeca = $_POST['fechaInicioBeca'];
         $fechaFinBeca = $_POST['fechaFinBeca'];
         $horasCubrir = $_POST['horasCubrir'];
         $clavePlantel = $_POST['clavePlantel'];
+        
+        
 
         $envioDatosProgramas = "INSERT INTO programas(id_UnicoPro,tipoProgra,horasCubrir,fechaInicioBeca,fechaFinBeca,fechaRegistro) VALUES ('$id_UnicoPro','$tipoProgra','$horasCubrir','$fechaInicioBeca','$fechaFinBeca','$fechaRegistroPrograma')";
         $envioDatosProgramasQUERY = mysqli_query($connection, $envioDatosProgramas);

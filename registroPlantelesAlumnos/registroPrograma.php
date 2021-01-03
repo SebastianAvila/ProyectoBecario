@@ -87,10 +87,14 @@
         <?php
         $v = mysqli_query($link, "SELECT * FROM planteles");
         while ($planteles  = mysqli_fetch_row($v)) {
+          
 
         ?>
 
           <option value="<?php echo $planteles[0] ?>"><?php echo $planteles[2] ?> </option>
+          
+          
+
 
         <?php }  ?>
 
