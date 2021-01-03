@@ -4,12 +4,21 @@
     box-sizing: border-box;
     font-family: sans-serif;
     font-family: 'Krona One', sans-serif;
+    
+}
+html{
+    background-image: url("Imagenes\qondoindex-copia.jpg");
+
 }
 
+body{
+    background-image: url("Imagenes\qondoindex - copia.jpg");
+
+}
 main{
     width: 100%;
     height: auto;
-    background: #34495E;
+    background: #ffffff;
     position: absolute;
 }
 
@@ -36,7 +45,7 @@ header{
 }
 
 #check:checked ~ .menu{
-    width: 200px;
+    width: 350px; /*Controla el largo de la barracuando este este desplegado*/
 }
 
 .menu{
@@ -44,7 +53,7 @@ header{
     top: 60px;
     width: 0px;
     height: 100vh;
-    background: #2D3E50;
+    background: #2D3E50; /*Controla el color de la barra*/
     transition: all 500ms cubic-bezier(1,0,0,1);
     transition-timing-function: cubic-bezier(1,0,0,1);
     overflow: hidden;
@@ -60,7 +69,7 @@ header{
 }
 
 .menu li:hover{
-    background: rgba(0,0,0,0.2);
+background: rgba(0,0,0,0.2); /*Controla el color cuando el mouse pasa encima suyo*/
 }
 
 

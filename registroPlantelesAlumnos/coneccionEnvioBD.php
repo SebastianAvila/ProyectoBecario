@@ -8,4 +8,3 @@ $pass = ""; //contraseña defaul de la base de datos
 $connection = mysqli_connecT($localhost, $root, $pass);
 //db_becario es el nombre de la base de datos 
 $db = mysqli_select_db($connection,'db_becario' );
-?> 
