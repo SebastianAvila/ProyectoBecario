@@ -27,14 +27,13 @@ if (isset($_POST['enviaPrograma'])) {
         
         
 
-        $envioDatosProgramas = "INSERT INTO programas(id_UnicoPro,tipoProgra,horasCubrir,fechaInicioBeca,fechaFinBeca,fechaRegistro) VALUES ('$id_UnicoPro','$tipoProgra','$horasCubrir','$fechaInicioBeca','$fechaFinBeca','$fechaRegistroPrograma')";
+        $envioDatosProgramas = "INSERT INTO programas(id_UnicoPro,tipoProgra,horasCubrir,fechaInicioBeca,fechaFinBeca,clavePlantel,fechaRegistro) VALUES ('$id_UnicoPro','$tipoProgra','$horasCubrir','$fechaInicioBeca','$fechaFinBeca','$clavePlantel','$fechaRegistroPrograma')";
         $envioDatosProgramasQUERY = mysqli_query($connection, $envioDatosProgramas);
 
-        $envioRelacion = "INSERT INTO Relacion_Planteles_Programas(clavePlantel,id_UnicoPro) VALUES ('$clavePlantel','$id_UnicoPro')";
-        $envioRelacionQUERY = mysqli_query($connection, $envioRelacion);
+      
 
 
-        if ($envioDatosProgramasQUERY and $envioRelacionQUERY) {
+        if ($envioDatosProgramasQUERY ) {
 ?>
 
             <h3 class="ok"> ¡Registro correcto! </h3>

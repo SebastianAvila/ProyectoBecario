@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="barraLateral.css?1.0">
+  <link rel="stylesheet" href="../cssGeneral\barraLateral.css?1.0">
+  <link rel="stylesheet" href="../cssGeneral\registroCss.css?1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -62,13 +63,13 @@
   }
 
   ?>
-  <form action="" method="post">
+  <form action="" method="post" id="formPrincipalRegistro" >
     <div>
 
       <h4>Tipo de Programa</h4>
       <select name="tipoProgra" id="" require>
         <option name="tipoProgra" value="0">Seleccione Uno</option>
-        <option name="tipoProgra" value="Practicas Profesionales">Practicas Profecionales</option>
+        <option name="tipoProgra" value="Practicas Profesionales">Practicas Profesionales</option>
         <option name="tipoProgra" value="Servicio Social "> Servicio Social</option>
         <option name="tipoProgra" value="Residencia "> Residencia</option>
       </select>
@@ -87,20 +88,15 @@
         <?php
         $v = mysqli_query($link, "SELECT * FROM planteles");
         while ($planteles  = mysqli_fetch_row($v)) {
-          
-
         ?>
-
           <option value="<?php echo $planteles[0] ?>"><?php echo $planteles[2] ?> </option>
-          
-          
-
-
-        <?php }  ?>
-
+        <?php } ?>
       </select>
 
-      <input type="submit" value="enviaPrograma" name="enviaPrograma" />
+  
+
+          <br><br>
+      <input type="submit" value="Registrar" id="enviaPrograma" />
 
     </div>
 

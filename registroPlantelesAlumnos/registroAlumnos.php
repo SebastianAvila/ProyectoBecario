@@ -6,7 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="barraLateral.css?1.0">
+    <link rel="stylesheet" href="../cssGeneral\barraLateral.css?1.0">
+    <link rel="stylesheet" href="../cssGeneral\registroCss.css?1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet" />
     <title>Registro Alumnos</title>
@@ -15,9 +16,7 @@
 
 <body>
 
-
-    <form action="" method="POST">
-        <div class="content-all">
+<div class="content-all">
             <header></header>
             <input type="checkbox" id="check">
             <label for="check" class="icon-menu">Menu</label>
@@ -54,6 +53,8 @@
                 </ul>
             </nav>
         </div>
+<form action="" method="POST" id="formPrincipalRegistro">
+      
 
         <div class="formAlumno">
             <h3>Nombre</h3>
@@ -69,12 +70,6 @@
 
             <h4>Apellido Materno</h4>
             <input type="text" name="apellidoMaterBeca" id="apellidoMaterBeca" placeholder="Apellido Materno">
-
-            <h4>Fecha de Inicio del Servicio</h4>
-            <input type="date" name="tiempoInicioBeca" id="tiempoInicioBeca" placeholder="Inicio servicio">
-
-            <h4>Fecha fin del servicio</h4>
-            <input type="date" name="tiempoFinBeca" id="tiempoFinBeca" placeholder="Fin Servicio">
 
             <h4>Celular</h4>
             <input type="number" name="celular" id="celular" placeholder="Lada + Numero">
@@ -103,7 +98,10 @@
                 <?php }  ?>
 
 
+                    
 
+            </select>
+            <br><br>    
             <input type="submit" value="Registrar" id="registraAlumno">
         </div>
 

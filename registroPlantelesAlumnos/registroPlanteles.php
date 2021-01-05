@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="barraLateral.css?1.0">
+  <link rel="stylesheet" href="../cssGeneral\barraLateral.css?1.0">
+  <link rel="stylesheet" href="../cssGeneral\registroCss.css?1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet" />
   <title>Registro Planteles</title>
@@ -48,7 +49,7 @@
       </ul>
     </nav>
   </div>
-  <form action="" method="POST">
+  <form action="" method="POST" id="formPrincipalRegistro">
     <div class="formPlanteles">
       <h3>Planteles</h3>
       <h4>Nombre</h4>
@@ -56,9 +57,9 @@
       <h4>Clave</h4>
       <input type="text" name="clavePlantel" id="clavePlantel">
       <h4>Localidad</h4>
-      <input type="text" name="localidadPlantel" id="localidadPlantel">
+      <input type="text" name="localidadPlantel" id="localidadPlantel"><br><br>
 
-      <input type="submit" value="registrar" name="registraPlantel">
+      <input type="submit" value="Registrar" id="registraPlantel">
 
 
     </div>
