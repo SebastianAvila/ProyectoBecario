@@ -1,10 +1,15 @@
-*{
+body{
 
-    font-family: sans-serif;
-    font-family: 'Krona One', sans-serif;
-    background-image: url("Imagenes\qondoindex.jpg");
+   
+    background-image: url("../Imagenes/jaguar_2-wallpaper-1366x768.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
+*{
+font-family: sans-serif;
+font-family: 'Krona One', sans-serif;
+}
 .divPrincipal {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 100%;
@@ -16,6 +21,7 @@
     min-height: 1px;
     text-align: center;
     margin: 0 auto; 
+    background-color: none;
   }
 
     .imgIndex {
@@ -24,51 +30,32 @@
         height: auto;
         margin: auto;
         display: block;
-        width: 300px;
+        width: 500px;
+        background-color: none;
       }
 
     .botones{
-        text-align: center;     
-        color: #ffffff;
-        background-color: #0275d8;
-        border-color: #0275d8;
+        text-align: center;       
+        background-color: #043057;
+        border-color: #043057;
         width: 700px;
         height: 50px;
-        
+        font-family: 'Krona One', sans-serif;
 
       }
 
       .botones:hover {
-        color: #fff;
-        background-color: #043057;
-        border-color: #043057;
+        background-color: #1639d4;
+        border-color: #3700ff;
         
       }
 
 
-      .botones:focus, .botones.focus {
-        -webkit-box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
-                box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
-      }
-      
-      .btn-primary.disabled, .btn-primary:disabled {
-        background-color: #0275d8;
-        border-color: #0275d8;
-      }
-      
-      .botones:active, .botones.active,
-      .show > .botones.dropdown-toggle {
-        color: #fff;
-        background-color: #025aa5;
-        background-image: none;
-        border-color: #01549b;
-      }
 
-      
-.barraVertical {
+    .barraVertical {
     display: flex;
-    padding-left: -1;
-    margin-bottom: 100px;
+    padding-left: 0;
+    margin-bottom: 65px;
     list-style: none;
     background-color: #043057;
     height: 60px;
@@ -76,4 +63,18 @@
 
 .nav-item {
     margin-bottom: -1px;
+  }
+
+  p{
+
+
+    font-size: xx-large;
+    color: rgb(224, 238, 23);    
+  
+  }
+
+  h2{
+    font-size: xx-large;
+    color:#043057;    
+  
   }

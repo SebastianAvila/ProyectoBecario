@@ -7,7 +7,7 @@
     
 }
 html{
-    background-image: url("Imagenes\qondoindex-copia.jpg");
+    background-image: url("../Imagenes\qondoindex-copia.jpg");
 
 }
 
@@ -37,7 +37,7 @@ header{
     position: fixed;
     left: 0;
     top: 0;
-    background: #19BC9D;
+    background: rgb(224, 238, 23); /*Controla el color de la barra*/
 }
 
 #check{
